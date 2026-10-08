@@ -1,5 +1,5 @@
 import random
-from operator import truediv
+
 
 name = input("Vul naam in: ")
 birthdate = input("Vul geboortedatum in (dd-mm-yyyy): ")
