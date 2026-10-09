@@ -1,4 +1,6 @@
 from datetime import datetime
+
+from games.fruitmachine import play_fruitmachine
 from games.roulette import play_roulette
 
 DIVIDER_LENGTH = 20
@@ -30,8 +32,7 @@ def main():
             case 1:
                 game_choice = show_game_menu()
                 if game_choice == 1:
-                    print("Fruitgame")
-                #     TODO: IMPLEMENT FRUIT GAME
+                    saldo = play_fruitmachine(saldo)
                 elif game_choice == 2:
                     saldo = play_roulette(saldo)
                 elif game_choice == 0:
